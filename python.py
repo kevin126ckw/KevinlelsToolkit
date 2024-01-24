@@ -42,7 +42,7 @@ async def main():
     art.tprint("KevinlelsToolkit")
     print(start_info)
     for _ in track("KevinChang", description="Loading:"):
-        time.sleep(3)
+        time.sleep(1)
 
     print("A Word For Today:Life is short.You need python.")
     print()
