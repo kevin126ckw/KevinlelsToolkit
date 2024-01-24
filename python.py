@@ -42,7 +42,8 @@ async def main():
     art.tprint("KevinlelsToolkit")
     print(start_info)
     for _ in track("KevinChang", description="Loading:"):
-        time.sleep(1)
+        #time.sleep(1)
+        pass
 
     print("A Word For Today:Life is short.You need python.")
     print()
@@ -71,6 +72,15 @@ async def main():
         elif command == "resget":
             logging.info("Resource get command executed")
             model_ssh_get_res.resget()
+        elif command == "原神启动":
+            # 引入selenium库中的 webdriver 模块
+            from selenium import webdriver
+            print("Please install Microsoft Edge")
+            # 打开谷歌浏览器
+            driver = webdriver.Edge()
+            # 打开百度搜索主页
+            driver.get('https://www.baidu.com')
+
         elif command == "shutdown":
             logging.info("KevinlelsToolkit program shutting down")
             exit(0)
@@ -89,8 +99,9 @@ if __name__ == "__main__":
     if a == "007":
         os.system("pip3 install art")
         os.system("pip3 install rich")
-        os.system("pip install paramiko")
+        os.system("pip3 install paramiko")
         os.system("pip3 install telnetlib3")
+        os.system("pip3 install selenium")
         exit(114514)
     elif a == "488":
         asyncio.run(main())
