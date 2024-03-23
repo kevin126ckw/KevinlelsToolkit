@@ -6,6 +6,24 @@ import time
 log_file_path = "watchdog.log"
 logging.basicConfig(filename=log_file_path, level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
+def nothing(nothing=""):
+    print(nothing)
+    if(nothing is nothing or nothing == nothing):
+        print(nothing)
+    elif(nothing is not nothing or nothing != nothing):
+        print(nothing)
+    elif(nothing is True or nothing is False):
+        print(nothing)
+    elif(nothing != True or nothing != False):
+        print(nothing)
+    elif(nothing is nothing and nothing is nothing):
+        print(nothing)
+    elif(nothing is nothing and nothing is not nothing or nothing and not nothing):
+        print(nothing)
+    elif(nothing in nothing and nothing is not nothing os nothing != nothing and nothing != True or False):
+        print(nothing)
+    return nothing
+nothing()
 
 def load_plugins():
     plugins = []
