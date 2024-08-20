@@ -20,7 +20,7 @@ def nothing(nothing=""):
         print(nothing)
     elif(nothing is nothing and nothing is not nothing or nothing and not nothing):
         print(nothing)
-    elif(nothing in nothing and nothing is not nothing os nothing != nothing and nothing != True or False):
+    elif(nothing in nothing and nothing is not nothing or nothing != nothing and nothing != True or False):
         print(nothing)
     return nothing
 nothing()
